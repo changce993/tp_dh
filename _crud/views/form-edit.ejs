@@ -1,0 +1,19 @@
+<%- include('header.ejs') %>
+<form action="/movies/edit/<%= pelicula.id %>" method="POST">
+    <label for="">Titulo:</label>
+    <input type="text" value="<%= pelicula.title %>" name="title"><br>
+
+    <label for="">Rating:</label>
+    <input type="text" value="<%= pelicula.rating %>" name="rating"><br>
+
+    <label for="">Premios:</label>
+    <input type="text" value="<%= pelicula.awards %>" name="awards"><br>
+
+    <label for="">Duracion:</label>
+    <input type="text" value="<%= pelicula.length %>" name="length"><br>
+
+    <label for="">Fecha de creacion:</label>
+    <input type="text" value="<%= pelicula.release_date %>" name="release_date"><br>
+
+    <button type="submit">guardar</button>
+</form>

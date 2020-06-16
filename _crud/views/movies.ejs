@@ -1,0 +1,7 @@
+<%- include('header.ejs') %>
+
+<ul>
+    <% for( var i=0; i < peliculas.length; i++) {%>
+        <li><a href="/movies/detail/<%= peliculas[i].id %>"><%= peliculas[i].title %></a></li>
+    <% } %>
+</ul>

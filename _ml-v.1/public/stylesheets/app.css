@@ -1,0 +1,134 @@
+*{
+    color: #151515;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #f7f7f7;
+}
+h1, h2,h3,h4,h5,h6{
+    color: #707070;
+    padding: 50px 0;
+}
+a{
+    color: #151515;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo img{
+    width: 100%;
+}
+#buscador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+#buscador input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 3px 10px;
+}
+#cuotas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+i{
+    margin: 0 5px;
+}
+main section.padre{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+main section.padre article.hijo{
+    _width: 23%;
+    background-color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.product-box-data {
+    position: relative;
+}
+main section.padre article.hijo i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 15px;
+    top: -23px;
+    background-color:white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+main section.padre article.hijo span.precio{
+    font-size: 1.5rem;
+    padding: 20px;
+}
+footer{
+    padding-top: 30px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+footer i{
+    font-size: 3rem;
+    padding: 30px 0;
+}
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+footer #container-footer .info-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .col-4 span{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+footer span{
+    padding: 20px 0;
+}
+footer #container-footer .info-footer p{
+    text-align: center;
+}
+
+@media ( max-width: 768px ) {
+    main section.padre article.hijo{
+        width: 45%;
+        margin: 20px 0;
+    }
+    main section.padre article.hijo i{
+        top: 82%;
+    }
+}
+
+@media ( max-width: 375px ) {
+    main section.padre article.hijo{
+        width: 100%;
+        margin: 20px 0;
+    }
+    main section.padre article.hijo i{
+        top: 83%;
+    }
+
+}
+.lupa{
+    background: #fff;
+    border:none;
+    border-left: 1px solid #b8b8b8;
+  }

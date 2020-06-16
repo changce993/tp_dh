@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: open sans;
+}
+#generalContainer{
+    width: 100%;
+    height: 100vh;;
+    display: flex;
+}
+#left{
+    width: 25%;
+    height: 100%;
+    background-color: white;
+}
+#right{
+    width: 75%;
+    height: 100%;
+    background-image: url('/images/e-about.jpg');
+    background-size: cover;
+}
+
+#innerContainer{
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+#navBar{
+    margin: 30px 0 30px 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255,255,255,.5);
+}
+#navBar ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#navBar ul a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin-right: 30px;
+}
+.socialNetworks{
+    width: 100%;
+    text-align: right;
+}
+i{
+    margin-right: 30px;
+    font-size: 24px;
+}
+section.body{
+    width: 100%;
+    padding: 50px 0 0 50px;
+}
+section.body h1{
+    font-size: 50px;
+    font-weight: normal;
+    font-style: italic;
+    font-family: 'Work Sans', sans-serif;
+}
+section.body .post{
+    margin: 40px 0 0 0;
+    color: green;
+}

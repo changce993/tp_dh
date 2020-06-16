@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mercado Liebre Argentina</title>
+	<!-- Font Awesome Stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<!-- Bootstrap Grid Stylesheet -->
+	<link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+	<!-- Own Stylesheet -->
+	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="/css/product-detail.css">
+</head>
+<body>
+
+	<%- include('partials/navbar')%>
+
+	<div class="container" id="product">
+		<h2>Detalle del producto: <%= producto.name %></h2>
+
+		<div id="padre">
+			<div class="row">
+				<div class="col-8">
+					<div class="row">
+						<div class="col-12">
+							<img src="/images/products/<%= producto.image %>" alt="">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12">
+							<p class="descripcion">
+								<%= producto.description %>
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-4">
+					<h2 class="product-title"><%= producto.name %></h2>
+					<p class="product-price"> <strike> <%= producto.price %> </strike>  / <%= producto.discount%>% OFF</p>
+					<p class="final-price">$<% let precioFinal = producto.price * producto.discount / 100 %> <%= precioFinal %></p>
+					<p><i class="fas fa-credit-card"></i> Paga en 12 cuotas sin interes</p>
+					<p><i class="fas fa-store"></i> Retiro grati en locales del vendedor</p>
+
+					<button>Comprar ahora</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<%- include('partials/footer') %>
+</body>
+</html>

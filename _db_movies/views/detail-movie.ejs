@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('partials/header.ejs')%>
+    <h1>Estas viendo la pelicula: <%= peliculas[0][0].title %></h1>
+    <li>Tiene <%= peliculas[0][0].rating %> de rating</li>
+    <li>Tiene <%= peliculas[0][0].awards %> premios</li>
+    <li>Tiene una duracion de: <%= peliculas[0][0].length / 60 %></li>
+    <li>Del genero <%= peliculas[0][0].name %></li>
+</body>
+</html>

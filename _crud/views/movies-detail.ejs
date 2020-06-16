@@ -1,0 +1,13 @@
+<%- include('header.ejs') %>
+<h1><%= pelicula.title %></h1>
+<ul>
+    <li>rating: <%= pelicula.rating %></li>
+    <li>premios: <%= pelicula.awards %></li>
+    <li>duracion: <%= pelicula.length %></li>
+    <li>duracion: <%= pelicula.release_date %></li>
+</ul>
+
+<button><a href="/movies/edit/<%= pelicula.id %>">editar</a></button>
+<form action="/movies/delete/<%= pelicula.id %>" method="POST">
+    <button type="submit">eliminar</button>
+</form>
