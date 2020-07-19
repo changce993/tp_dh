@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color : <%=color%>
+      }
+    </style>
+  </head>
+  <body >
+    <h1>Elige un color</h1>
+
+    <form action="/" method="POST">
+      <input type="color" name="color">
+      <button type="submit">Cargar</button>
+      <br>
+      <label for="recordame">Recordar</label>
+      <input type="checkbox" name="recordar" id="recordame">
+    </form>
+
+    <%if (message) { %>
+      <span><%=message%></span>
+    <% } %>
+  </body>
+</html>
